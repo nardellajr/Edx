@@ -48,6 +48,8 @@ def combiningcomparisons():
     s = "CapitaL"  # True
     s = "Not Capital" # False
 
+    print("Test Case")
+
     print(str.isupper(s[:1]) and str.isupper(s[-1:]))
 
     # [ ] Write a second expression to test if x is an even number outside the range [-100, 100]
@@ -56,6 +58,7 @@ def combiningcomparisons():
 
     x = 115  # (False), x not in the range but Odd
     print(not(-100 < x < 100) and x % 2 == 0)
+    # rewrite of above
     print(not(x > -100 and x < 100) and x % 2 == 0)
 
 
