@@ -1,0 +1,61 @@
+
+cows
+
+[ ['Millie', 'Henrietta'], ['Betsy'], ['Lola'], ['Oreo', 'Moo Moo', 'Maggie', 'Milkshake'], ['Herman', 'Florence'] ]
+
+[['Millie', 'Henrietta'], ['Betsy'], ['Lola'], ['Oreo', 'Moo Moo', 'Maggie', 'Milkshake'], ['Herman'], ['Florence']]
+[['Millie', 'Henrietta'], ['Betsy'], ['Lola'], ['Florence', 'Herman', 'Oreo', 'Moo Moo', 'Maggie'], ['Milkshake']]
+[['Millie', 'Henrietta'], ['Betsy'], ['Lola'], ['Oreo', 'Florence', 'Maggie', 'Moo Moo'], ['Herman', 'Milkshake']]
+[['Millie', 'Henrietta'], ['Betsy'], ['Lola'], ['Oreo', 'Florence', 'Maggie', 'Moo Moo'], ['Milkshake'], ['Herman']]
+[['Millie', 'Henrietta'], ['Betsy'], ['Lola'], ['Oreo', 'Herman', 'Maggie', 'Moo Moo'], ['Florence', 'Milkshake']]
+[['Millie', 'Henrietta'], ['Betsy'], ['Lola'], ['Oreo', 'Herman', 'Maggie', 'Moo Moo'], ['Milkshake'], ['Florence']]
+[['Millie', 'Henrietta'], ['Betsy'], ['Lola'], ['Oreo', 'Moo Moo', 'Maggie'], ['Herman', 'Florence', 'Milkshake']]
+[['Millie', 'Henrietta'], ['Betsy'], ['Lola'], ['Oreo', 'Moo Moo', 'Maggie'], ['Herman', 'Milkshake'], ['Florence']]
+[['Millie', 'Henrietta'], ['Betsy'], ['Lola'], ['Oreo', 'Moo Moo', 'Maggie'], ['Florence', 'Milkshake'], ['Herman']]
+[['Millie', 'Henrietta'], ['Betsy'], ['Lola'], ['Oreo', 'Moo Moo', 'Maggie'], ['Milkshake'], ['Florence', 'Herman']]
+[['Millie', 'Henrietta'], ['Betsy'], ['Lola'], ['Oreo', 'Moo Moo', 'Maggie'], ['Milkshake'], ['Florence'], ['Herman']]
+[['Millie', 'Henrietta'], ['Betsy'], ['Lola'], ['Florence', 'Herman', 'Milkshake', 'Moo Moo', 'Maggie'], ['Oreo']]
+[['Millie', 'Henrietta'], ['Betsy'], ['Lola'], ['Moo Moo', 'Florence', 'Maggie', 'Milkshake'], ['Oreo', 'Herman']]
+
+
+
+cows.items()
+
+[ [('Milkshake', 2), ('Maggie', 3), ('Moo Moo', 3), ('Millie', 5), ('Florence', 2), ('Oreo', 6), ('Betsy', 9), ('Lola', 2), ('Herman', 7), ('Henrietta', 9)] ]
+
+[ [('Milkshake', 2), ('Moo Moo', 3), ('Millie', 5), ('Florence', 2), ('Oreo', 6), ('Betsy', 9), ('Lola', 2), ('Herman', 7), ('Henrietta', 9)], [('Maggie', 3)] ]
+
+[[('Milkshake', 2), ('Maggie', 3), ('Moo Moo', 3), ('Millie', 5), ('Florence', 2), ('Oreo', 6), ('Betsy', 9), ('Lola', 2), ('Henrietta', 9)], [('Herman', 7)]]
+[[('Milkshake', 2), ('Moo Moo', 3), ('Millie', 5), ('Florence', 2), ('Oreo', 6), ('Betsy', 9), ('Lola', 2), ('Henrietta', 9)], [('Herman', 7), ('Maggie', 3)]]
+[[('Milkshake', 2), ('Moo Moo', 3), ('Millie', 5), ('Florence', 2), ('Oreo', 6), ('Betsy', 9), ('Lola', 2), ('Henrietta', 9)], [('Maggie', 3)], [('Herman', 7)]]
+[[('Milkshake', 2), ('Maggie', 3), ('Moo Moo', 3), ('Millie', 5), ('Florence', 2), ('Oreo', 6), ('Lola', 2), ('Herman', 7), ('Henrietta', 9)], [('Betsy', 9)]]
+[[('Milkshake', 2), ('Moo Moo', 3), ('Millie', 5), ('Florence', 2), ('Oreo', 6), ('Lola', 2), ('Herman', 7), ('Henrietta', 9)], [('Betsy', 9), ('Maggie', 3)]]
+[[('Milkshake', 2), ('Moo Moo', 3), ('Millie', 5), ('Florence', 2), ('Oreo', 6), ('Lola', 2), ('Herman', 7), ('Henrietta', 9)], [('Maggie', 3)], [('Betsy', 9)]]
+[[('Milkshake', 2), ('Maggie', 3), ('Millie', 5), ('Moo Moo', 3), ('Florence', 2), ('Oreo', 6), ('Lola', 2), ('Henrietta', 9)], [('Herman', 7), ('Betsy', 9)]]
+[[('Milkshake', 2), ('Maggie', 3), ('Millie', 5), ('Moo Moo', 3), ('Florence', 2), ('Oreo', 6), ('Lola', 2), ('Henrietta', 9)], [('Betsy', 9)], [('Herman', 7)]]
+[[('Milkshake', 2), ('Moo Moo', 3), ('Millie', 5), ('Florence', 2), ('Oreo', 6), ('Lola', 2), ('Henrietta', 9)], [('Herman', 7), ('Betsy', 9), ('Maggie', 3)]]
+[[('Milkshake', 2), ('Moo Moo', 3), ('Millie', 5), ('Florence', 2), ('Oreo', 6), ('Lola', 2), ('Henrietta', 9)], [('Betsy', 9), ('Maggie', 3)], [('Herman', 7)]]
+
+
+
+
+sorted(cows.items(), key=lambda kv: kv[1], reverse=True)
+
+
+[ [('Betsy', 9), ('Herman', 7), ('Oreo', 6), ('Lola', 2), ('Milkshake', 2), ('Henrietta', 9), ('Millie', 5), ('Florence', 2), ('Maggie', 3), ('Moo Moo', 3)] ]
+
+[ [('Herman', 7), ('Oreo', 6), ('Lola', 2), ('Milkshake', 2), ('Henrietta', 9), ('Millie', 5), ('Florence', 2), ('Maggie', 3), ('Moo Moo', 3)], [('Betsy', 9)] ]
+
+[[('Betsy', 9), ('Herman', 7), ('Oreo', 6), ('Lola', 2), ('Milkshake', 2), ('Millie', 5), ('Florence', 2), ('Maggie', 3), ('Moo Moo', 3)], [('Henrietta', 9)]]
+[[('Herman', 7), ('Oreo', 6), ('Lola', 2), ('Milkshake', 2), ('Millie', 5), ('Florence', 2), ('Maggie', 3), ('Moo Moo', 3)], [('Betsy', 9), ('Henrietta', 9)]]
+[[('Herman', 7), ('Oreo', 6), ('Lola', 2), ('Milkshake', 2), ('Millie', 5), ('Florence', 2), ('Maggie', 3), ('Moo Moo', 3)], [('Henrietta', 9)], [('Betsy', 9)]]
+[[('Betsy', 9), ('Oreo', 6), ('Lola', 2), ('Milkshake', 2), ('Henrietta', 9), ('Millie', 5), ('Florence', 2), ('Maggie', 3), ('Moo Moo', 3)], [('Herman', 7)]]
+[[('Oreo', 6), ('Lola', 2), ('Milkshake', 2), ('Henrietta', 9), ('Millie', 5), ('Florence', 2), ('Maggie', 3), ('Moo Moo', 3)], [('Betsy', 9), ('Herman', 7)]]
+[[('Oreo', 6), ('Lola', 2), ('Milkshake', 2), ('Henrietta', 9), ('Millie', 5), ('Florence', 2), ('Maggie', 3), ('Moo Moo', 3)], [('Herman', 7)], [('Betsy', 9)]]
+[[('Betsy', 9), ('Oreo', 6), ('Lola', 2), ('Milkshake', 2), ('Millie', 5), ('Florence', 2), ('Maggie', 3), ('Moo Moo', 3)], [('Herman', 7), ('Henrietta', 9)]]
+[[('Betsy', 9), ('Oreo', 6), ('Lola', 2), ('Milkshake', 2), ('Millie', 5), ('Florence', 2), ('Maggie', 3), ('Moo Moo', 3)], [('Henrietta', 9)], [('Herman', 7)]]
+[[('Oreo', 6), ('Lola', 2), ('Milkshake', 2), ('Millie', 5), ('Florence', 2), ('Maggie', 3), ('Moo Moo', 3)], [('Betsy', 9), ('Herman', 7), ('Henrietta', 9)]]
+[[('Oreo', 6), ('Lola', 2), ('Milkshake', 2), ('Millie', 5), ('Florence', 2), ('Maggie', 3), ('Moo Moo', 3)], [('Herman', 7), ('Henrietta', 9)], [('Betsy', 9)]]
+
+
+
